@@ -5,7 +5,28 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        ## 📋 Show us the bug
+
+        > [!CAUTION]
+        > **This is the most important part.**
+        > A **minimal reproduction** is required to investigate and fix the issue, or it will be closed.
+
+        A minimal reproduction is **required**, otherwise the issue might be closed without further notice. [**Why & How?**](https://antfu.me/posts/why-reproductions-are-required)
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction link or steps
+      placeholder: https://github.com/... or https://stackblitz.com/...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > **🙋 Need help?** Use [_Priority Support_](https://github.com/sponsors/sxzz) for debugging help and implementation!
+
   - type: textarea
     id: bug-description
     attributes:
@@ -14,14 +35,7 @@ body:
       placeholder: Bug description
     validations:
       required: true
-  - type: input
-    id: reproduction
-    attributes:
-      label: Reproduction
-      description: A minimal reproduction is **required**, otherwise the issue might be closed without further notice. [**Why & How?**](https://antfu.me/posts/why-reproductions-are-required) **必填，否则可能会被直接关闭。**
-      placeholder: Reproduction
-    validations:
-      required: true
+
   - type: textarea
     id: system-info
     attributes:
@@ -30,20 +44,8 @@ body:
       render: Shell
       placeholder: System, Binaries, Browsers
     validations:
-      required: true
-  - type: dropdown
-    id: package-manager
-    attributes:
-      label: Used Package Manager
-      description: Select the used package manager
-      options:
-        - npm
-        - yarn
-        - pnpm
-        - bun
-        - n/a
-    validations:
-      required: true
+      required: false
+
   - type: checkboxes
     id: checkboxes
     attributes:
@@ -60,6 +62,12 @@ body:
           required: true
         - label: The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🛠️ Contribute
+
   - type: checkboxes
     id: contributions
     attributes:
@@ -68,3 +76,20 @@ body:
       options:
         - label: I am willing to submit a PR to fix this issue
         - label: I am willing to submit a PR with failing tests (actually just go ahead and do it, thanks!)
+
+  # Thanks to @privatenumber for his sponsorship inspiration
+  - type: checkboxes
+    attributes:
+      label: Compensating engineering work will speed up resolution and support the project
+      options:
+        - label: I'm willing to offer $16 for financial support
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Need immediate help?
+        Escalate this issue by supporting the project as a [_Priority Patron_](https://github.com/sponsors/sxzz)!
+
+        Your concern will receive prompt attention, ensuring faster and more efficient resolution.
+
+        [→ Become a _Priority Patron_!](https://github.com/sponsors/sxzz)
