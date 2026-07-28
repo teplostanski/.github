@@ -21,12 +21,6 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        > [!TIP]
-        > **🙋 Need help?** Use [_Priority Support_](https://github.com/sponsors/sxzz) for debugging help and implementation!
-
   - type: textarea
     id: bug-description
     attributes:
@@ -52,13 +46,11 @@ body:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Follow our [Code of Conduct](https://github.com/sxzz/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: Follow our [Code of Conduct](https://github.com/teplostanski/.github/blob/main/CODE_OF_CONDUCT.md)
           required: true
-        - label: Read the [Contributing Guide](https://github.com/sxzz/contribute).
+        - label: Read the [Contributing Guide](https://github.com/teplostanski/.github/blob/main/CONTRIBUTING.md).
           required: true
         - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
-          required: true
-        - label: Check that this is a concrete bug. For Q&A, please open a GitHub Discussion instead.
           required: true
         - label: The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
           required: true
@@ -77,19 +69,9 @@ body:
         - label: I am willing to submit a PR to fix this issue
         - label: I am willing to submit a PR with failing tests (actually just go ahead and do it, thanks!)
 
-  # Thanks to @privatenumber for his sponsorship inspiration
-  - type: checkboxes
-    attributes:
-      label: Compensating engineering work will speed up resolution and support the project
-      options:
-        - label: I'm willing to offer $16 for financial support
-
   - type: markdown
     attributes:
       value: |
-        ## 🚀 Need immediate help?
-        Escalate this issue by supporting the project as a [_Priority Patron_](https://github.com/sponsors/sxzz)!
+        ## 💖 Support
 
-        Your concern will receive prompt attention, ensuring faster and more efficient resolution.
-
-        [→ Become a _Priority Patron_!](https://github.com/sponsors/sxzz)
+        If this project has been helpful, consider supporting via [donate.teplostanski.me](https://donate.teplostanski.me).
